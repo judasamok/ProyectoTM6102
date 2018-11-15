@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="AppTiendaVirtual.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link href="css/estilos.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Tinos|Maven+Pro" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="css/img/favicon.png">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/mdb.min.js"></script>
+    <script src="js/scriptMap.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBts69kpV6dyYl80eFKmglhXRc577C_o5U&callback=initMap"> /*&callback=initMap*/
+    </script>
+            
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="css/img/banner1.png" alt="Banner1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="css/img/banner2.png" alt="Banner2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="css/img/banner3.png" alt="Banner3">
+                </div>
+            </div>
+        </div><!--end-->
+
+        
+        <nav id="Menu" class="navbar navbar-expand-lg navbar-dark navbar-bg">
+
+            <a class="navbar-brand" href="Default.aspx">
+                <img src="css/img/logo.png" alt="Inicio" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#menu" aria-controls="bNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="Catalogo.aspx" class="nav-link">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="CheckOut.aspx" class="nav-link">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contactenos.aspx" class="nav-link">Contáctenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="QuienesSomos.aspx" class="nav-link">Quienes somos</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                            <a href="RegistrarUsuarios.aspx" class="nav-link">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                                 <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="nav-link"/>
+                            </li>
+                             <li class="nav-item">
+                                 <asp:LoginName ID="LoginName" runat="server" CssClass="nav-link"/>
+                            </li>
+                </ul>
+            </div>
+
+        </nav>        
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

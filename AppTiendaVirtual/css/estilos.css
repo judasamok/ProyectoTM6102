@@ -1,0 +1,131 @@
+﻿body {
+    /*background-image: url(../css/img/back.jpg);*/
+    background-color: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    font-family: 'Maven Pro' !important;
+}
+
+.map-container{
+    height: 400px;
+}
+
+.Panel {
+    margin: 0 auto;
+    width: auto;
+    padding: 1em;
+    border: 1px solid #dedede;
+    border-radius: 1em;
+    text-align: center;
+    color: #393939;
+    box-shadow: 5px 5px 5px rgba(25,0,0,25);
+	background-color: white;
+}
+
+.TextoContenido {
+
+    color: maroon;
+
+}
+
+.navbar-bg {
+    background-color: #10ce99 !important;    
+    font-weight: bold;
+}
+
+/*.navbar-dark .navbar-nav .nav-link {
+    background-color: orange;
+}*/
+
+.form-header {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    color: #dedede;
+    text-align: center;
+    margin-top: -3.13rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: .125rem;
+}
+
+.img-contenedor img {
+	-webkit-transition: all .9s ease; /* Safari y Chrome */
+	-moz-transition: all .9s ease; /* Firefox */
+	-o-transition: all .9s ease; /* IE 9 */
+	-ms-transition: all .9s ease; /* Opera */
+	width: 100%;
+}
+
+.img-contenedor:hover img {
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+.img-contenedor { /*Ancho y altura son modificables al requerimiento de cada uno*/
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+@media (max-width: 767px) {
+	.column {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.column-1,
+	.column-2 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.column-1 {
+		width: 50%;
+	}
+
+	.column-2 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.column-2,
+	.column-1 {
+		width: 33%;
+	}
+}
+
+footer.page-footer {
+	bottom: 0;
+	color: #fff;
+}
+
+footer.page-footer {
+	bottom: 0;
+	color: #fff;
+}
+
+.font-small {
+	font-size: .9rem;
+}
+
+.special-color-dark {
+	background-color: #263238 !important;
+}
+
+.pt-4, .py-4 {
+	padding-top: 1.5rem !important;
+}
+
+/*imagen de fondo para el login*/
+ImgLogin {
+    background-image: url(../css/img/fondoLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
