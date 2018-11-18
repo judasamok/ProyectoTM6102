@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container form-group d-flex justify-content-center mt-5 mb-5">
-        
+     
+    <div class="container form-group d-flex justify-content-center mt-5 mb-5">
+               
         <div class="card  mt-5 pt-3 col-lg-6 col-md-6 text-center">
 
             <!--Header-->
