@@ -30,7 +30,7 @@
                     </div>
                     <div class="text-center mt-4">
                         <asp:Button ID="btnEnviar" CssClass="btn btn-primary" 
-                            runat="server" Text="Enviar" />
+                            runat="server" Text="Enviar" OnClick="btnEnviar_Click" />
                     </div>
                 </div>
             </div>
