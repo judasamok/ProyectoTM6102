@@ -30,9 +30,10 @@ namespace AppTiendaVirtual
                 if (this.controlador.validarPerfil(this.txtEmail.Text.Trim(),
                     this.txtPassword.Text.Trim()))
                 {
-
                     FormsAuthentication.SetAuthCookie(this.txtEmail.Text, false);
-                    Response.Redirect("default.aspx");
+                    Session["nombreUsuario"] = this.controlador.nombreUsuario;
+                    Session["email"] = this.controlador.email;
+                    Response.Redirect("Default.aspx");
                 }
 
             }

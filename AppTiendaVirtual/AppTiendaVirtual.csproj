@@ -97,7 +97,6 @@
     <Content Include="Contactenos.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\estilos.css" />
-    <Content Include="css\font-awesome.min.css" />
     <Content Include="css\img\back.jpg" />
     <Content Include="css\img\banner1.png" />
     <Content Include="css\img\banner2.png" />
@@ -127,6 +126,7 @@
     <Content Include="js\popper.min.js" />
     <Content Include="js\scriptMap.js" />
     <Content Include="Login.aspx" />
+    <Content Include="logo.png" />
     <Content Include="QuienesSomos.aspx" />
     <Content Include="RegistrarUsuarios.aspx" />
     <Content Include="SqlServerTypes\readme.htm" />

@@ -13,6 +13,7 @@ namespace Controlador
     public class ControladorADO
     {
         private string strStringConexion;
+        public string nombreUsuario, email;
 
         public ControladorADO(string pCnxConexion)
         {
@@ -43,6 +44,8 @@ namespace Controlador
 
                 if (lector.Read())
                 {
+                    this.email = lector["email"].ToString();
+                    this.nombreUsuario = lector["NombreCompleto"].ToString();
                     autorizado = true;
                 }
 

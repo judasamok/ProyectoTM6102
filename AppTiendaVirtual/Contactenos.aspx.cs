@@ -17,7 +17,10 @@ namespace AppTiendaVirtual
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            {
 
+            }
         }//end
 
         protected void btnEnviar_Click(object sender, EventArgs e)
