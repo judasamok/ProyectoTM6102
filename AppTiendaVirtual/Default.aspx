@@ -5,10 +5,9 @@
 
     <h1 class="m-4">Inicio</h1>
     <asp:Image ID="Image1" Height="400px" Width="400px" runat="server" />
-    <audio id="audio" controls="controls" runat="server">
-        <source src="" type="audio/mpeg" />        
-    </audio>
     
     
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
 </asp:Content>

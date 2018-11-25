@@ -14,8 +14,13 @@ namespace AppTiendaVirtual
 
             string url = "css/img/KornRAR2013-copy.png";
             Image1.ImageUrl = url;
-            audio.Src = "css/audio/audio1.mp3";
+            
             
         }//end
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }//end
 }//end

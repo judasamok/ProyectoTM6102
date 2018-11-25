@@ -126,7 +126,6 @@
     <Content Include="js\popper.min.js" />
     <Content Include="js\scriptMap.js" />
     <Content Include="Login.aspx" />
-    <Content Include="logo.png" />
     <Content Include="QuienesSomos.aspx" />
     <Content Include="RegistrarUsuarios.aspx" />
     <Content Include="SqlServerTypes\readme.htm" />

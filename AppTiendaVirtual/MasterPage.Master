@@ -55,7 +55,7 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item">                        
                         <a href="Catalogo.aspx" class="nav-link">Catalogo</a>
                     </li>                    
                     <li class="nav-item">
@@ -65,18 +65,23 @@
                         <a href="QuienesSomos.aspx" class="nav-link">Quienes somos</a>
                     </li>
                    
-                    <li class="nav-item">
-                        <a href="RegistrarUsuarios.aspx" class="nav-link">Registrar</a>
+                    <li class="nav-item">                        
+                        <a href="RegistrarUsuarios.aspx" class="nav-link">Registrarse</a>
+                    </li>                    
+                    <li class="nav-item">                        
+                        <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="nav-link" LoginText="Iniciar Sesión" LogoutText="Cerrar Sesión" />
                     </li>
-                    <li class="nav-item">
-                        <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="nav-link"/>
-                    </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item">                        
                         <asp:LoginName ID="LoginName" runat="server" CssClass="nav-link"/>
                     </li>
                     <li class="nav-item">
-                        <a href="CheckOut.aspx" class="nav-link"><i class="fa fa-shopping-cart prefix" aria-hidden="true"></i>Checkout</a>
-                    </li>
+                        <a href="CheckOut.aspx" class="nav-link">
+                            <span class="badge danger-color"> <asp:Label ID="cantProduc" runat="server">3</asp:Label> </span>
+                            <i class="fa fa-shopping-cart prefix" aria-hidden="true"></i>
+                            Checkout
+                        </a>
+                    </li><!--end checkout-->
                 </ul>
             </div>
 

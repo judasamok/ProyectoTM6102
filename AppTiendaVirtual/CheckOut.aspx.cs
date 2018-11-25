@@ -13,6 +13,6 @@ namespace AppTiendaVirtual
         {
             if (!HttpContext.Current.User.Identity.IsAuthenticated)
                 Response.Redirect("Login.aspx");
-        }
-    }
-}
+        }//end
+    }//end
+}//end
