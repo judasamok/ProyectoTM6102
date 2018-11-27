@@ -13,12 +13,21 @@ namespace AppTiendaVirtual {
     public partial class Catalogo {
         
         /// <summary>
-        /// ddlCanton control.
+        /// ddlCategorias control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCanton;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategorias;
+        
+        /// <summary>
+        /// dgtProductos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgtProductos;
     }
 }

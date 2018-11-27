@@ -7,7 +7,7 @@
 
 		<!-- Card -->
 		<div class="row">
-            <div class="card card-image " style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+            <div class="card card-image backgroundParallax">
                 <!-- Content -->
                 <div class=" TextoContenido text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                     <div>

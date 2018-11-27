@@ -12,8 +12,8 @@ namespace AppTiendaVirtual
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string url = "css/img/KornRAR2013-copy.png";
-            Image1.ImageUrl = url;
+            //string url = "css/img/KornRAR2013-copy.png";
+            //Image1.ImageUrl = url;
             
             
         }//end

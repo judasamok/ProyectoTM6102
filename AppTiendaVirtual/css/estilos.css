@@ -137,3 +137,99 @@ ImgLogin {
     background-size: cover;
     padding: 2%;
 }
+
+/*new css*/
+.backgroundParallax {
+    background-image: url(../css/img/musica.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    height: calc(100vh-174px);
+}
+
+
+
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+
+.sliderImages {
+    width: 100%;
+}
+
+.margenesTextoindex {
+    margin-top: 11%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.border-content-imagen1 {
+    border-left: 2px solid #52AA00;
+}
+
+.border-content-imagen2 {
+    border-left: 2px solid #52AA00;
+}
+
+.tipografia-titulos-slider {
+    color: #fff;
+    font-size: 350%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.tipografia-titulos-slider2 {
+    color: #fff;
+    font-size: 350%;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.botonSlider {
+    color: #fff;
+    font-size: 100%;
+    top: 64%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.botonSlider2 {
+    color: #fff;
+    font-size: 100%;
+    top: 64%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*imagen de fondo para el login*/
+ImgLogin {
+    background-image: url(../css/img/fondoLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+
+/*estilo para dropdown catalogo*/
+
+/* Custom Select */
+.select {
+    position: relative;
+    display: block;
+    width: 40em;
+    height: 5em;
+    line-height: 3;
+    border-radius: .25em;
+    background-color: aqua;
+}

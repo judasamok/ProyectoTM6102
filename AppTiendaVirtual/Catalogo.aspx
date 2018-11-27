@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Catalogo.aspx.cs" Inherits="AppTiendaVirtual.Catalogo" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -13,7 +14,6 @@
 
         <div class="row text-center d-flex justify-content-center">
             <div class="col-lg-4 ">
-
             </div>
 
             <div>
@@ -22,145 +22,82 @@
             </div>
 
             <div>
-                <button class="btn btn-primary " type="button">Categoria</button>
-                <asp:DropDownList ID="ddlCanton" runat="server" Width="100%" CssClass="form-control"></asp:DropDownList>
-            </div>  
+                <asp:DropDownList type="button" ID="ddlCategorias" runat="server" CssClass="form-control select selectpicker" OnSelectedIndexChanged="ddlCategorias_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+
+            </div>
+
+
         </div>
+        
 
-        <div class="row ext-center my-5 mt-5">
-            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="view view-cascade overlay">
-                        <img src="CSS/IMG/KornRAR2013-copy.png" class="card-img-top" alt="sample photo">
-                        <a>
-                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                        </a>
-                    </div>
-                
-                    <div class="card-body card-body-cascade text-center">
-                        <h5 class="grey-text">Korn</h5>
-                        <h4 class="card-title">
-                            <strong>
-                                <a href="#">Follow the Leader</a>
-                            </strong>
-                        </h4>
-
-                        <p class="card-text">Lanzado el 18 de agosto de 1998 a través de las discográficas Immortal y Epic Records. </p>
-
-                        <div class="card-footer px-1">
-                            <span class="float-left font-weight-bold">
-                                <strong>10$</strong>
-                            </span>
-                            
-                            <span class="float-right">
-                                <i class="fa fa-shopping-cart grey-text ml-3"></i>
-                                <i class="fa fa-heart ml-3"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="view view-cascade overlay">
-                        <img src="CSS/IMG/LimpBizkitReading2015-copy.png" class="card-img-top" alt="sample photo">
-                        <a>
-                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                        </a>
-                    </div>
-
-                    <div class="card-body card-body-cascade text-center">
-                        <h5 class="grey-text">Limp Bizkit</h5>
-                        <h4 class="card-title">
-                            <strong>
-                                <a href="#">Significant Other </a>
-                            </strong>
-                        </h4>
-
-                        <p class="card-text">Fue grabado entre noviembre de 1998 y febrero de 1999 en NRG Recording Services </p>
-
-                        <div class="card-footer px-1">
-                            <span class="float-left font-weight-bold">
-                                <strong>8$</strong>
-                            </span>
-                            <span class="float-right">
-                                <i class="fa fa-shopping-cart grey-text ml-3"></i>
-                                <i class="fa fa-heart grey-text ml-3"></i>
-                            </span>
-                        </div>
-                    </div>
-              
-                </div>
-           
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-md-0 mb-4">
-
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="view view-cascade overlay">
-                        <img src="CSS/IMG/PapaRoachKolnPalladium-copy.png" class="card-img-top" alt="sample photo">
-                        <a>
-                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                        </a>
-                    </div>
+        <%--<div class="form-group card">
+            <asp:GridView ID="dgtProductos" runat="server" AutoGenerateColumns="false" 
+                DataKeyNames="codigo" CssClass="card card-cascade narrower card-ecommerce"
+                Width="90%" Style="margin-top: 50px; margin-left: 40px; margin-right: 40px"
+                HorizontalAlign="Center" OnRowCommand="dgtProductos_RowCommand" ShowHeader="False">
+                <Columns>
+                    <asp:ImageField DataImageUrlField="fotoUrl" ControlStyle-CssClass="col-md-2">
+                        <ControlStyle CssClass="view view-cascade overlay"></ControlStyle>
+                    </asp:ImageField>
                     
-                    <div class="card-body card-body-cascade text-center">
-                        <h5  class="grey-text">Papa Roach</h5>
-                        <h4 class="card-title"><strong><a href="#">Metamorphosis</a></strong></h4>
+                    <asp:BoundField DataField="codigo" HeaderText="Codigo" HeaderStyle-CssClass="card card-cascade narrower card-ecommerce" />
+                    <asp:BoundField DataField="descripcion" HeaderText="Descripcion" HeaderStyle-CssClass="card-body card-body-cascade text-center" />
+                    
+                    <asp:BoundField DataField="precioCompra" HeaderText="Precio Compra" HeaderStyle-CssClass="card-footer px-1" />
+                    <asp:BoundField DataField="montoDescuento" HeaderText="Monto descuento" HeaderStyle-CssClass="card-footer px-1" />
+                    <asp:BoundField DataField="subtotal" HeaderText="sub total" HeaderStyle-CssClass="card-footer px-1" />
+                </Columns>
+                
+                <HeaderStyle CssClass="card card-cascade narrower card-ecommerce" />
+            </asp:GridView>
+        </div><!--end-->--%>
 
-                        <p class="card-text">Fue lanzado al mercado por Interscope el martes 24 de marzo de 2009.​</p>
+        <asp:GridView ID="dgtProductos" runat="server" AutoGenerateColumns="False" 
+            Width="90%" Style="margin-top: 50px; margin-left: 40px; 
+            margin-right: 40px" CssClass="table table-striped table-bordered table-hover" 
+            HorizontalAlign="Center" OnRowCommand="dgtProductos_RowCommand"
+            DataKeyNames="codigo" ShowHeader="False">
+            <Columns>
+                <asp:ImageField DataImageUrlField="fotoUrl" ControlStyle-CssClass="col-md-2">
+                    <ControlStyle CssClass="col-md-12"></ControlStyle>
 
-                        <div class="card-footer px-1">
-                            <span class="float-left font-weight-bold">
-                                <strong>19$</strong>
-                            </span>
-                            <span class="float-right">
-                                <i class="fa fa-shopping-cart grey-text ml-3"></i>
-                                <i class="fa fa-heart grey-text ml-3"></i>
-                            </span>
-                        </div>
-                    </div>
-              
-                </div>
-         
-            </div>
+                    <ItemStyle Width="50%" />
+                </asp:ImageField>
+                <asp:BoundField DataField="codigo" Visible="False"></asp:BoundField>
+                <asp:BoundField DataField="descripcion" Visible="False" HeaderText="Descripcion" ItemStyle-CssClass="col-md-10"></asp:BoundField>
+                <asp:BoundField DataField="precioCompra" Visible="False" HeaderText="PrecioCompra"></asp:BoundField>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card card-cascade narrower card-ecommerce">
-                    <div class="view view-cascade overlay">
-                        <img src="CSS/IMG/SystemOfDown.png" class="card-img-top" alt="sample photo">
-                        <a>
-                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
-                        </a>
-                    </div>
-
-                    <div class="card-body card-body-cascade text-center">
-                        <h5 class="grey-text">System of Down</h5>
-                        <h4 class="card-title">
-                            <strong><a href="#">Toxicity</a></strong>
-                        </h4>
-
-                        <p class="card-text">Publicado el 4 de septiembre de 2001 por American Recordings, dio a conocer la banda. </p>
-
-                        <div class="card-footer px-1">
-                            <span class="float-left font-weight-bold">
-                                <strong>19$</strong>
-                            </span>
-                            <span class="float-right">
-                                <i class="fa fa-shopping-cart grey-text ml-3"></i>
-                                <i class="fa fa-heart ml-3"></i>
-                            </span>
-                        </div>
-                    </div>             
-                </div>
-           
-            </div>
-
-        </div>
-
-    </div><!--end container-->
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <itemstyle width="100px" />
+                        <p>
+                            Codigo del poroducto: 
+                            <asp:Label Style="" ID="lblCodigo" runat="server" Text='<%#Eval("codigo") %>' />
+                        </p>
+                        <p>
+                            Descripcion: 
+                            <asp:Label ID="lblDescripcion" runat="server" Text='<%#Eval("descripcion") %>' />
+                        </p>
+                        <p>
+                            Precio: 
+                                    <asp:Label ID="lblPrecioCompra" runat="server" Text='<%#Eval("precioCompra") %>' />
+                        </p>
+                        <asp:Button ID="AddButton" runat="server" class="btn btn-primary"
+                            CommandName="AddToCart"
+                            CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                            Text="Add to Cart" OnClick="AddButton_Click" />
+                    </ItemTemplate>
+                    <ItemStyle Width="60%" />
+                </asp:TemplateField>
 
 
-    
+            </Columns>
+        </asp:GridView>
+
+
+
+    </div>
+    <!--end container-->
+
+
 </asp:Content>

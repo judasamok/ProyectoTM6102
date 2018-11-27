@@ -95,5 +95,83 @@ namespace Controlador
 
         }
 
+        public DataSet categorias()
+        {
+            try
+            {
+                SqlConnection conexion = new SqlConnection(this.strStringConexion);
+                conexion.Open();
+
+                SqlCommand comando = new SqlCommand();
+                comando.Connection = conexion;
+                comando.CommandText = "select codigo,descripcion from [dbo].[Vp_CatalogoClasificaciones] order by codigo";
+                comando.CommandType = CommandType.Text;
+
+                DataSet datos = new DataSet();
+
+                SqlDataAdapter adaptador = new SqlDataAdapter();
+                adaptador.SelectCommand = comando;
+
+
+                adaptador.Fill(datos);
+
+                conexion.Close();
+
+                conexion.Dispose();
+                comando.Dispose();
+                adaptador.Dispose();
+
+                return datos;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public DataSet consultarProductos(int pCategorias)
+        {
+            try
+            {
+                DataSet Lista = new DataSet("ListaProductos");
+
+                SqlConnection conexion = new SqlConnection(this.strStringConexion);
+
+                conexion.Open();
+
+                SqlCommand comando = new SqlCommand();
+
+                comando.Connection = conexion;
+
+                comando.CommandType = CommandType.StoredProcedure;
+
+                comando.CommandText = "[Sp_Cns_ProductosClasificacion]";
+
+                comando.Parameters.AddWithValue("@clasificacion", pCategorias);
+
+                SqlDataAdapter adaptador = new SqlDataAdapter();
+
+                adaptador.SelectCommand = comando;
+
+                adaptador.Fill(Lista);
+
+                conexion.Close();
+                conexion.Dispose();
+                comando.Dispose();
+                adaptador.Dispose();
+
+                return Lista;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
     }//
 }//
