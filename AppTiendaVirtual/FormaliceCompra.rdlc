@@ -21,7 +21,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>1.00869in</Top>
+        <Top>0.19619in</Top>
         <Left>0.66541in</Left>
         <Height>0.32292in</Height>
         <Width>2.21875in</Width>
@@ -258,7 +258,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>1.52084in</Top>
+        <Top>0.64584in</Top>
         <Left>0.66541in</Left>
         <Height>0.625in</Height>
         <Width>8.14584in</Width>
@@ -269,74 +269,6 @@
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox14">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Nombre: </Value>
-                <Style>
-                  <FontFamily>Century</FontFamily>
-                  <FontSize>14pt</FontSize>
-                  <Color>#3f3fb4</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>0.61632in</Top>
-        <Left>0.66541in</Left>
-        <Height>0.32292in</Height>
-        <Width>0.9375in</Width>
-        <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox15">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Número factura:</Value>
-                <Style>
-                  <FontFamily>Century</FontFamily>
-                  <FontSize>14pt</FontSize>
-                  <Color>#3f3fb4</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>0.22396in</Top>
-        <Left>0.66541in</Left>
-        <Height>0.32292in</Height>
-        <Width>2.21875in</Width>
-        <ZIndex>3</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
     <Height>3.22917in</Height>
     <Style />

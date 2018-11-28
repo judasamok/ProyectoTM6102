@@ -3,12 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container form-group d-flex justify-content-center mt-5 mb-5 ImgLogin">
+    <div class="container-fluid ImgLogin">
+
+    <div class="container form-group d-flex justify-content-center mt-5 mb-5">
         
         <div class="card  mt-5 pt-3 col-lg-6 col-md-6 text-center">
 
             <!--Header-->
-            <div class="form-header primary-color  mb-1  d-flex justify-content-center">
+            <div class="form-header loginCol1  mb-1  d-flex justify-content-center">
                 <h3><i class="fa fa-user mt-2 mb-2"></i> Iniciar Sesión</h3>
             </div>
             
@@ -20,26 +22,26 @@
 
                 <div class="md-form">
 
-                    <i class="fa fa-envelope prefix text-primary "></i>
+                    <i class="fa fa-envelope prefix loginCol2"></i>
                     <asp:TextBox ID="txtEmail" runat="server" placeholder="Insertar email"></asp:TextBox>
                 </div>
 
                 <div class="md-form">
-                    <i class="fa fa-lock prefix text-primary"></i>
+                    <i class="fa fa-lock prefix loginCol2"></i>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Insertar password"></asp:TextBox>
                 </div>
 
                 <div class="text-center pt-5">
                     
-                    <asp:Button class="btn success-color" ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click"/>
+                    <asp:Button class="btn loginCol3" ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click"/>
                 </div>
                 
-                <div class="inline-ul text-center d-flex justify-content-center mt-3">
+                <%--<div class="inline-ul text-center d-flex justify-content-center mt-3">
                         
                     <asp:Label runat="server" Text="¿Olvidaste tu"></asp:Label>
                     <a href="#" class=" mx-1"> password? </a>
          
-                </div>
+                </div>--%>
 
                 <hr>
                     <div class="inline-ul text-center d-flex justify-content-center">
@@ -50,7 +52,7 @@
 
         </div>
     </div><!--end container-->
-
+</div>
     
 
 </asp:Content>

@@ -3,12 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      
+    <div class="container-fluid ImgRegist">
+
     <div class="container form-group d-flex justify-content-center mt-5 mb-5">
                
         <div class="card  mt-5 pt-3 col-lg-6 col-md-6 text-center">
 
             <!--Header-->
-            <div class="form-header danger-color  mb-1  d-flex justify-content-center">
+            <div class="form-header registCol1  mb-1  d-flex justify-content-center">
                 <h3><i class="fa fa-user-plus mt-2 mb-2"></i> Registrarse</h3>
             </div>
            
@@ -20,23 +22,23 @@
 
                 <div class="md-form">
 
-                    <i class="fa fa-user prefix text-danger "></i>
+                    <i class="fa fa-user prefix registCol2"></i>
                     <asp:TextBox ID="txtNombreCompleto" runat="server" placeholder="Nombre Completo"></asp:TextBox>
                 </div>
 
                 <div class="md-form">
 
-                    <i class="fa fa-envelope prefix text-danger "></i>
+                    <i class="fa fa-envelope prefix registCol2"></i>
                     <asp:TextBox ID="txtEmail" runat="server" placeholder="Insertar email"></asp:TextBox>
                 </div>
 
                 <div class="md-form">
-                    <i class="fa fa-lock prefix text-danger"></i>
+                    <i class="fa fa-lock prefix registCol2"></i>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Insertar password"></asp:TextBox>
                 </div>
 
                 <div class="text-center pt-5">
-                    <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" class="btn success-color" OnClick="btnRegistrar_Click"/>
+                    <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" class="btn registCol3" OnClick="btnRegistrar_Click"/>
                 </div>
                
                 <hr>
@@ -48,6 +50,6 @@
 
         </div>
     </div><!--end container-->
-
+   </div>
 
 </asp:Content>

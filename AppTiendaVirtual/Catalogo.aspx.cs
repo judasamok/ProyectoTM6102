@@ -72,7 +72,7 @@ namespace AppTiendaVirtual
 
         protected void AddButton_Click(object sender, EventArgs e)
         {
-          
+  
         }
 
         protected void dgtProductos_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -83,22 +83,13 @@ namespace AppTiendaVirtual
                 GridView grid = (GridView)sender;
                 int fila = int.Parse(e.CommandArgument.ToString());
 
-
-
                 Product product = new Product( );
-
-
+                
                 product.codigo = this.dgtProductos.DataKeys[fila]["codigo"].ToString();
+                product.nombre = (this.dgtProductos.Rows[fila].FindControl("lblnombre") as Label).Text;
+                product.nombreDisco = (this.dgtProductos.Rows[fila].FindControl("lblNombreDisco") as Label).Text;
                 product.descripcion = (this.dgtProductos.Rows[fila].FindControl("lblDescripcion") as Label).Text;
-                product.precio = decimal.Parse( (this.dgtProductos.Rows[fila].FindControl("lblPrecioCompra") as Label).Text );
-               // product.strDescripcion = this.dgtProductos.Rows[this.ddlCategorias.SelectedIndex].Cells[2].Text;
-
-                //Product product = new Product();
-
-
-                //product.strCodigo = this.dgtProductos.Rows[fila].Cells[0].Text.ToString();
-
-                //product.strDescripcion = this.dgtProductos.Rows[fila].Cells[1].Text.ToString();
+                product.precio = decimal.Parse( (this.dgtProductos.Rows[fila].FindControl("lblPrecioCompra") as Label).Text );               
 
 
                 this.carrito.Add(product);

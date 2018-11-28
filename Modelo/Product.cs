@@ -8,7 +8,7 @@ namespace Modelo
 {
     public class Product
     {
-        private string strCodigo, strDescripcion;
+        private string strCodigo, strDescripcion, strNombre, strNombreDisco;
         private decimal decPrecio;
 
         public string codigo
@@ -23,6 +23,18 @@ namespace Modelo
             get => this.strDescripcion;
         }
 
+        public string nombre
+        {
+            set => this.strNombre = value;
+            get => this.strNombre;
+        }
+
+        public string nombreDisco
+        {
+            set => this.strNombreDisco = value;
+            get => this.strNombreDisco;
+        }
+
         public decimal precio
         {
             set => this.decPrecio = value;
@@ -33,6 +45,8 @@ namespace Modelo
         {
             this.codigo = "";
             this.descripcion = "";
+            this.nombre = "";
+            this.nombreDisco = "";
             this.precio = 0;
         }
         

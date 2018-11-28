@@ -213,23 +213,81 @@ ImgLogin {
     position: absolute;
 }
 
-/*imagen de fondo para el login*/
-ImgLogin {
-    background-image: url(../css/img/fondoLogin.jpg);
+/*estilos para login*/
+.ImgLogin {
+    background-image: url(img/imgLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+.loginCol1 {
+    background-color: #6EB1B7;
+}
+.loginCol2 {
+    color: #6EB1B7;
+}
+.loginCol3 {
+    background-color: #B50303;
+}
+/*estilos para registro\*/
+.ImgRegist {
+    background-image: url(img/imgRegist.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2%;
 }
 
-/*estilo para dropdown catalogo*/
+.registCol1 {
+    background-color: #B50303;
+}
 
-/* Custom Select */
+.registCol2 {
+    color: #B50303;
+}
+
+.registCol3 {
+    background-color: #6EB1B7;
+}
+
+/*estilo para  catalogo*/
 .select {
-    position: relative;
-    display: block;
-    width: 40em;
-    height: 5em;
-    line-height: 3;
-    border-radius: .25em;
-    background-color: aqua;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 5px 10px;
+    border-radius: 5px 12px;
+    background-color: #0E2130;
+    font-weight: bold;
+    width: 13em;
+    height: 2em;
+    text-align: center;
+}
+
+.CatCol1 {
+    background-image: linear-gradient(to top, #b50303, #9c0044, #631d5e, #262953, #0e2130);
+}
+.CatCol2 {
+    background-color: #E0E3DA;
+}
+.CatCol3 {
+    background-color: #6EB1B7;
+}
+.CatCol4 {
+    background-color: #0E2130;
+}
+.CatCol5 {
+    background-color: #04050A4D;
+}
+
+.CatCol6 {
+    color: #6EB1B7;
+}
+
+/*---------------*/
+
+colores {
+    color: #B50303;
+    color: #E0E3DA;
+    color: #6EB1B7;
+    color: #0E2130;
+    color: #04050A;
 }

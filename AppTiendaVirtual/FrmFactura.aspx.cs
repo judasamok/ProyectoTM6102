@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace AppTiendaVirtual
 {
-    public partial class MasterPage : System.Web.UI.MasterPage
+    public partial class FrmFactura : System.Web.UI.Page
     {
-        
-
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
